@@ -1,4 +1,0 @@
- System.out.println("Robot #3 \n Type: " + cleanerRobot.getType() + "\n Speed: "
-                + basicRobot.getSpeed() + "\n Moving in: " + cleanerRobotMovement.getDimensions() + " dimensional space"
-                + "\n Angle of direction: " + cleanerRobotMovement.getDirectionAngle()
-                + "\n Current position: " + Arrays.toString(cleanerRobotMovement.getCoordinates()) + "\n");
