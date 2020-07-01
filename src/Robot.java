@@ -1,7 +1,13 @@
 public class Robot {
+    public Robot(int id) {
+        this.id = id;
+        }
+
+    private int id;
     private String type;
     private double speed;
     private int dimensions = 0; //default value
+
 
     public double currentXPosition;
     public double currentYPosition;
@@ -40,7 +46,7 @@ public class Robot {
     }
 
 
-        // get type
+    // get type
     public String getType() {
         return type;
     }
@@ -55,4 +61,9 @@ public class Robot {
         return dimensions;
     }
 
+    //print
+    public void print() {
+        System.out.println("Robot #" + this.id + " \n Type: " + this.getType() + "\n Speed: "
+                + this.getSpeed() + "\n");
+    }
 }
