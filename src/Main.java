@@ -10,17 +10,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //TODO Create a function that returns the max integer in an array of integers. For example: 
-        // EvaArraysUtils.max([1, 4, 10, 2, 3 ]) -> 10  
-        // Create a function that returns the min integer in an array of integers. For example:
-        //  EvaArraysUtils.min([1, 4, 10, 2, 3 ]) -> 1 
-        // EvaArraysUtils.min([1, 4, -10, 2, 3 ]) -> -10  
-        // Create a function that inserts an integer in a given position of an array of integers:  	 
-        // EvaArraysUtils.insertIn(3, 0, [1, 4, 10, 2, 3 ]) -> [3, 1, 4, 10, 2, 3 ]  
-        // Create a function that removes an integer of an array of integers:  
-        //  EvaArraysUtils.remove(3, [1, 4, 10, 2, 3 ]) -> [1, 4, 10, 2]
-        //  EvaArraysUtils.remove(3, [3, 4, 3, 2, 3 ]) -> [4, 2] 
-
 
         //Setting up scanner
         Scanner scan = new Scanner(System.in);
@@ -33,6 +22,7 @@ public class Main {
 
         basicRobot.setCurrentXPosition(0.0);
         basicRobot.setCurrentYPosition(0.0);
+        basicRobot.setPaths(0.0, 0.0);
 
         //ROBOT #2 - DRONE
         Robot drone = new Robot(2);
@@ -160,6 +150,7 @@ public class Main {
                     currentZCoordinates = 0.0;
                     break;
                 }
+
             }
 
         }

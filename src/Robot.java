@@ -1,7 +1,9 @@
 public class Robot {
     public Robot(int id) {
         this.id = id;
+        this.paths = new double[]{0.0, 0.0};
         }
+
 
     private int id;
     private String type;
@@ -12,8 +14,15 @@ public class Robot {
     public double currentXPosition;
     public double currentYPosition;
     public double currentZPosition;
+    //set as one coordinate object
 
-    public double[] coordinates;
+    public double[] paths;
+
+    //set paths
+    public void setPaths(double x, double y) {
+        this.paths = ArraysPractise.insertIn(y,0, paths);
+        this.paths = ArraysPractise.insertIn(x,0, paths);
+    }
 
     //setting type
     public void setType(String robotType) {

@@ -33,6 +33,7 @@ public class Movement {
         return directionAngle;
     }
 
+
     //get vertical direction angle
     public double getDirectionAngleVertical() {
         return directionAngleVertical;
